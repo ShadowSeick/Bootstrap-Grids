@@ -60,57 +60,59 @@
             </div>
         </div>
     </nav>
+
 <main>
-    <div class="container">
-        <button type="button" class="btn btn-primary mb-1">Grid Three A</button>
-            <button type="button" class="btn btn-transparent text-primary mb-1">Grid Three B</button>
-               <div class="row minHeight">
-                   <div class="col mb-0">
-                    <div class="p-3 bg-secondary h-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nesciunt quaerat a distinctio reprehenderit eum, accusamus enim. Cum officiis doloremque 
-                        consectetur dolorem ratione. Illo voluptatum rem non, corrupti eos reiciendis.
-                    </div>
-                   </div>
-                   <div class="col">
-                       <div class="row h-100">
-                           <div class="col-12 h-50">
-                            <div class="bg-secondary h-100 p-3">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam impedit quo autem modi cum, 
-                                    cupiditate voluptatum expedita voluptatibus quibusdam earum eum inventore numquam necessitatibus, mollitia ad atque vel soluta!
-                                   </p>
-                               </div>
-                           </div>
-                           <div class="col-12 h-50">
-                               <div class="bg-dark text-white h-100 p-3">
-                                <p class=" h-75 overflow-hidden mb-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam impedit quo autem modi cum, 
-                                    cupiditate voluptatum expedita voluptatibus quibusdam earum eum inventore numquam necessitatibus, mollitia ad atque vel soluta!
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam impedit quo autem modi cum,  <br>
-                                    cupiditate voluptatum expedita voluptatibus quibusdam earum eum inventore numquam necessitatibus, mollitia ad atque vel soluta!
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam impedit quo autem modi cum, 
-                                    cupiditate voluptatum expedita voluptatibus quibusdam earum eum inventore numquam necessitatibus, mollitia ad atque vel soluta!
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam impedit quo autem modi cum, 
-                                    cupiditate voluptatum expedita voluptatibus quibusdam earum eum inventore numquam necessitatibus, mollitia ad atque vel soluta!
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam impedit quo autem modi cum, 
-                                    cupiditate voluptatum expedita voluptatibus quibusdam earum eum inventore numquam necessitatibus, mollitia ad atque vel soluta!
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam impedit quo autem modi cum, 
-                                    cupiditate voluptatum expedita voluptatibus quibusdam earum eum inventore numquam necessitatibus, mollitia ad atque vel soluta!
-                                   </p>
-                                   <hr>
-                                <div>
-                                    <button type="button" class="btn btn-light ">Read more</button></div>
-                               </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+    <div class="container mb-1">
+        <div class="d-block">
+            <button class="btn" type="button" id="buttonA" onclick="showHide()">Grid 3A</button>
+            <button class="btn" type="button" id="buttonB" onclick="showHide()">Grid 3B</button>
+          </div>
     </div>
+    <div class="container text-white py-0" id="Grid3A">
+        <div class="row minHeight">
+            <div class="col">
+                <div class="bg-secondary h-100 p-3">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque adipisci enim, quas, 
+                        dicta voluptatum aperiam rem architecto expedita in sit cupiditate repellat dolore repudiandae 
+                        pariatur facilis accusamus tempore commodi?
+                        </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 bg-secondary h-100 p-3">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque adipisci enim, quas, 
+                        dicta voluptatum aperiam rem architecto expedita in sit cupiditate repellat dolore repudiandae 
+                        pariatur facilis accusamus tempore commodi?
+                        </p>
+                    </div>
+                    <div class="col-12 bg-dark h-100 p-3">
+                        <p class="overflow-hidden">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque adipisci enim, quas, 
+                        dicta voluptatum aperiam rem architecto expedita in sit cupiditate repellat dolore repudiandae 
+                        pariatur facilis accusamus tempore commodi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque adipisci enim, quas, 
+                        dicta voluptatum aperiam rem architecto expedita in sit cupiditate repellat dolore repudiandae 
+                        pariatur facilis accusamus tempore commodi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo atque adipisci enim, quas, 
+                        dicta voluptatum aperiam rem architecto expedita in sit cupiditate repellat dolore repudiandae 
+                        pariatur facilis accusamus tempore commodi?
+                        </p>
+                        <hr>
+                        <button class="btn btn-light" type="button">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-primary minHeight d-none" id="Grid3B"></div>
+
 </main>
         
 
-    <footer class="footer py-1 bg-dark">
+    <footer class="footer py-3 bg-dark mt-auto">
         <div class="container-fluid text-center">
             <span class="text-white">Bootstrap Grid Practice</span>
         </div>
@@ -121,6 +123,25 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script>
+        function showHide() {
+            let containerA = document.getElementById("Grid3A");
+            let containerB = document.getElementById("Grid3B");
+            let buttonA = document.getElementById("buttonA");
+            let buttonB = document.getElementById("buttonB");
+            if (containerA.style.display === "none") {
+                containerA.style.display = "block";
+                containerB.style.display = "none";
+                buttonA.classList.add("bg-primary");
+                buttonB.classList.remove("bg-primary");
+            } else {
+                containerA.style.display = "none";
+                containerB.style.display = "block";
+                buttonA.classList.remove("bg-primary");
+                buttonB.classList.add("bg-primary");
+            }
+        }
     </script>
 </body>
 
