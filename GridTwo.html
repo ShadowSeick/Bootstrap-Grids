@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="d-flex flex-column h-100 bgimage">
+<body class="d-flex flex-column h-100">
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -30,10 +30,10 @@
                         <a class="nav-link" aria-current="page" href="realIndex.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="GridOne.html">Grid One</a>
+                        <a class="nav-link " href="GridOne.html">Grid One</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="GridTwo.html">Grid Two</a>
+                        <a class="nav-link active" href="GridTwo.html">Grid Two</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="GridThree.html">Grid Three</a>
@@ -54,22 +54,29 @@
                         <a class="nav-link" href="GridEight.html">Grid Eight</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="GridNine.html">Grid Nine</a>
+                        <a class="nav-link" href="GridNine.html">Grid Nine</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-<main class="flex-shrink-0">
+<main>
     <div class="container">
-        <h1 class="heroText text-center">bootstrap and the grids</h1>
-        <p class="lead text-center text-white">An exercise in bootstrap grid layouts</p>
+        <div class="row text-white">
+         <div class="col-4 sidebar">
+             <div class="p-2 bg-secondary minHeight">SIDEBAR</div>
+         </div>
+         <div class="col main">
+             <div class="p-2 bg-dark minHeight">MAIN</div>
+         </div>
+     </div>
     </div>
-  </main>
-    <footer class="footer bg-dark">
+</main>
+        
+
+    <footer class="footer py-1 bg-dark">
         <div class="container-fluid text-center">
-            <span class="text-white">Place sticky footer content here.</span>
+            <span class="text-white">Bootstrap Grid Practice</span>
         </div>
     </footer>
     <!-- Bootstrap JS -->
