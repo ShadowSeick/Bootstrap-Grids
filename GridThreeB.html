@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Bootstrap Grids</title>
+    <title>PageTitle</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="d-flex flex-column h-100 bgimage">
+<body class="d-flex flex-column h-100">
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -27,16 +27,16 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="realIndex.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="realIndex.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="GridOne.html">Grid One</a>
+                        <a class="nav-link " href="GridOne.html">Grid One</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="GridTwo.html">Grid Two</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="GridThree.html">Grid Three</a>
+                        <a class="nav-link active" href="GridThree.html">Grid Three</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="GridFour.html">Grid Four</a>
@@ -62,14 +62,56 @@
     </nav>
 
 <main class="flex-shrink-0">
-    <div class="container mt-5">
-        <h1 class="heroText text-center display-1">bootstrap and the grids</h1>
-        <p class="lead text-center text-white">An exercise in bootstrap grid layouts</p>
+    <div class="container h-100 minHeight">
+        <ul class="nav nav-pills mb-1">
+            <li class="nav-item">
+                <a href="GridThree.html" class="nav-link" aria-current="page">Grid 3A</a>
+            </li>
+            <li class="nav-item">
+                <a href="GridThreeB.html" class="nav-link active" aria-current="page">Grid 3B</a>
+            </li>
+        </ul>
+        <div class="row h-100">
+            <!--LEFT COLUMN-->
+            <div class="col-7">
+                <div class="bg-secondary text-white h-100 p-3">
+                    <h1>Article</h1>
+                    <p>Est ei erat mucius quaeque. Ei his quas phaedrum, efficiantur mediocritatem ne sed, hinc oratio blandit ei sed. Blandit gloriatur eam et. Brute noluisse per et, verear disputando neglegentur at quo. Sea quem legere ei, unum soluta ne duo. Ludus complectitur quo te, ut vide autem homero pro.</p>
+                </div>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="col-5 h-100 d-flex flex-column">
+                <!--RIGHT TOP COLUMN-->
+                <div class="bg-secondary text-white p-2">
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                </div>
+                <!--RIGHT BOTTOM COLUMN-->
+                <div class="bg-dark text-white p-2 mt-2">
+                    <h5>More Articles</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Article 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Article 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Article 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </main>
-    <footer class="footer bg-dark mt-auto py-3">
+</main>
+        
+
+    <footer class="footer py-3 bg-dark mt-auto">
         <div class="container-fluid text-center">
-            <span class="text-white">Place sticky footer content here.</span>
+            <span class="text-white">Bootstrap Grid Practice</span>
         </div>
     </footer>
     <!-- Bootstrap JS -->

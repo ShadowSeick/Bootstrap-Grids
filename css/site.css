@@ -8,8 +8,8 @@ body {
 
 body>main {
     /* margin to account for nav bar */
-    margin-top: 0.7em;
-    margin-bottom: 0.63em;
+    margin-top: 25px;
+    margin-bottom: 60px;
 }
 
 main>.container, main> .container-fluid {
