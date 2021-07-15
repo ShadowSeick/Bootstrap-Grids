@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
-    <title>Bootstrap Grids</title>
+    <title>PageTitle</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,62 +10,75 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/site.css">
+   <link rel="stylesheet" href="https://use.typekit.net/mhj5wdi.css">
 
-   <!-- Convert this to an external style sheet -->
-   <style>
-       main>.container {
-           padding: 60px 15px 0;
-       }
-   </style>
-    <link rel="stylesheet" href="https://use.typekit.net/mhj5wdi.css">
-    <link rel="stylesheet" href="/css/site.css">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100 bgimage">
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bootstrap Grids</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="realIndex.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridOne.html">Grid One</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridTwo.html">Grid Two</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridThree.html">Grid Three</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridFour.html">Grid Four</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="GridFive.html">Grid Five</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridSix.html">Grid Six</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridSeven.html">Grid Seven</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridEight.html">Grid Eight</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="GridNine.html">Grid Nine</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap Grids</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="realIndex.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridOne.html">Grid One</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridTwo.html">Grid Two</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridThree.html">Grid Three</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridFour.html">Grid Four</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridFive.html">Grid Five</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridSix.html">Grid Six</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridSeven.html">Grid Seven</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GridEight.html">Grid Eight</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="GridNine.html">Grid Nine</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
+<main class="flex-shrink-0">
+    <div class="container">
+        <h1 class="heroText text-center">bootstrap and the grids</h1>
+        <p class="lead text-center text-white">An exercise in bootstrap grid layouts</p>
+    </div>
+  </main>
+    <footer class="footer bg-dark">
+        <div class="container-fluid text-center">
+            <span class="text-white">Place sticky footer content here.</span>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

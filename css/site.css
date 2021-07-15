@@ -12,6 +12,10 @@ body>main {
     margin-bottom: 20px;
 }
 
+main>.container {
+    padding: 60px 15px 0;
+}
+
 .heroText {
     font-family: modesto-open-shadow, sans-serif;
     font-weight: 400;
@@ -41,10 +45,6 @@ body>main {
   html {
     position: relative;
     min-height: 100%;
-}
-
-body {
-    margin-bottom: 60px;
 }
 
 .footer {
